@@ -1,0 +1,6 @@
+HOST cluste machien 
+CPU: AMD EPYC (with IBPB) (2) @ 2.000GHz 
+x86_64
+
+please change the ARmake.inc line PLAT to the correct architecture
+x86_64
