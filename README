@@ -1,3 +1,11 @@
+##Fortran DINEOF 
+
+1. Build Docker `docker build . -t fortarpack` 
+2. Run the container with a mapped volume `docker run -it -v $(pwd)/scripts:/source/scripts fortarpack /bin/bash`
+3. the DINEOF make file is inside the folder `/source/DINEOF/`
+5. the ARPACK lib is inside the folder `/root/ARPACK/`
+
+
 HOST cluste machien 
 CPU: AMD EPYC (with IBPB) (2) @ 2.000GHz 
 x86_64
