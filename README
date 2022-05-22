@@ -8,7 +8,7 @@
 5. the ARPACK lib is inside the folder `/root/ARPACK/`
 
 
-The ARmake.inc file must be edited:
+The ARmake.inc file must be edited before running the docker file to build and install ARPACK library:
   line PLAT, to the correct architecture -- ours is PLAT = x86_64
   line FFLAGS, for our architecture, FFLAGS = -o
   line MAKE, for Ubuntu, change to:  MAKE = /usr/bin/make
