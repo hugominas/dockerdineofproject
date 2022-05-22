@@ -1,4 +1,6 @@
 ##Fortran DINEOF 
+## for Ubuntu 20.04 
+## pc architecture x86_64
 
 1. Build Docker `docker build . -t fortarpack` 
 2. Run the container with a mapped volume `docker run -it -v $(pwd)/scripts:/source/scripts fortarpack /bin/bash`
@@ -6,5 +8,7 @@
 5. the ARPACK lib is inside the folder `/root/ARPACK/`
 
 
-please change the ARmake.inc line PLAT to the correct architecture
-x86_64
+The ARmake.inc file must be edited:
+  line PLAT, to the correct architecture -- ours is PLAT = x86_64
+  line FFLAGS, for our architecture, FFLAGS = -o
+  line MAKE, for Ubuntu, change to:  MAKE = /usr/bin/make
